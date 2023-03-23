@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS</title>
+    <link rel="stylesheet" href="./styles.css">
+</head>
+
+<body>
+    <section>
+        <article>
+            <h1>Que es una especificidad</h1>
+            <p>La especificidad es el nivel de importancia de una regla de estilos en relacion con otras reglas, se
+                utiliza para determinar cual de las reglas de estilo es el que se aplica en caso de que haya conflictos
+                o contradicciones entre ellas</p>
+            <table border="1">
+                <tr>
+                    <th>Element HTML</th>
+                    <th>class</th>
+                    <th>ID</th>
+                    <th>In-line</th>
+                    <th>important</th>
+                </tr>
+                <tr>
+                    <th>1</th>
+                    <th>10</th>
+                    <th>100</th>
+                    <th>1000</th>
+                    <th>Infinito</th>
+                </tr>
+            </table>
+            <br>
+            <table border="1">
+                <tr>
+                    <th>
+                        < p class="parrafo" id="parrafo">Hola< /p>
+                    </th>
+                </tr>
+                <tr>
+                    <th>#parrafo{color:red;}</th>
+                </tr>
+                <tr>
+                    <th>.parrafo{color:blue}</th>
+                </tr>
+            </table>
+            <p>El ID como tiene mas valor se antepondra al class que tiene menos valor</p>
+        </article>
+        <article>
+            <h1>Selectores</h1>
+            <p>Son una parte fundamental para la sintaxis de CSS, se utliza para aplicar estilos visuales a un documento
+                HTML</p>
+            <table border="1">
+                <tr>
+                    <th>Selectores de etiquetas</th>
+                    <th>Selectores de clase</th>
+                    <th>Selectores de id</th>
+                </tr>
+            </table>
+            <p>Tenemos por ejemplo la class que se representa con el "." y el ID con "#"</p>
+        </article>
+        <article>
+            <h1>Cascada</h1>
+            <p>Como bien dice el nombre Cascading Style sheets, se refiere al proceso que utliza el motor de estilos del
+                navegador para deteminar que reglas de estilos deben aplicarser a un elemento HTML</p>
+            <table border="1">
+                <tr>
+                    <th>
+                        < p> Hola < /p>
+                    </th>
+                </tr>
+                <tr>
+                    <th>p{color:green;}</th>
+                </tr>
+                <tr>
+                    <th>p{color:blue;}</th>
+                </tr>
+            </table>
+            <p>Como todo trabaja como una cascada el ultimo elemento independientemente de lo que usemos tendra mas
+                valor que el anterior y sera priorizado</p>
+        </article>
+        <article>
+            <h1>Herencia</h1>
+            <p>Se refiere a la forma en que los estilos definidos en un elemento HTML se aplican a sus elmentos
+                secundarios.</p>
+            <table border="1">
+                <tr>
+                    <th>body{color:blue;}</th>
+                </tr>
+                <tr>
+                    <th>body h1{color:inherit;}</th>
+                </tr>
+            </table>
+        </article>
+    </section>
+</body>
+
+</html>
