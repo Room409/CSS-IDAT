@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./font-css.css">
+</head>
+
+<body>
+    <section>
+        <div>
+            <h1>min-height</h1>
+            <p class="block1">asignaremos un minimo de altura</p>
+            <h1>max-width</h1>
+            <p class="block2">asignaremos un maximo de ancho</p>
+            <h1>Font-family:</h1>
+            <p class="Font-family">Define el tipo de fuente que debes utilizar</p>
+            <h1>Font-size:</h1>
+            <p class="Font-size">Define el tamaño de texto que vas a aplicar</p>
+            <p class="rem-em">Tenemos como rem y em: rem se suma de 16 en 16 si no hay un tamaño de texto asignado, por
+                lo contrario em y rem multiplica el tamaño de texto asginado, si el tamaño en el html asignado es de
+                30px, 1em o 1rem valdra 30px</p>
+            <h1>font-style:</h1>
+            <p class="font-style">Define el estilo al texto que aplicaras</p>
+            </p>
+            <h1>text-decoration:</h1>
+            <p class="text-decoration">Agrega una decoracion al texto que estamos añadiendo</p>
+            <h1>font-weight:</h1>
+            <p class="font-weight">Define el peso de la fuente como negra o normal</p>
+        </div>
+    </section>
+    <section class="selectores">
+        <h1 class="main-h1">Selectores</h1>
+        <div>
+            <h2>Selector de etiquetas:</h2>
+            <p>podemos llamar directamente una etiqueta de html y editarlo en css</p>
+            <xmp style="border: 1px solid black;">p{color:red;}</xmp>
+        </div>
+        <div>
+            <h2>Selector de clase </h2>
+            <p>Podemos llamar clases aplicadas en las etiquetas de html a css</p>
+            <xmp style="border: 1px solid black;">
+                <p class="parrafo">hola</p>
+            </xmp>
+            <xmp style="border: 1px solid black;">.parrafo{color:red;}</xmp>
+        </div>
+        <div>
+            <h2>Selectores de ID</h2>
+            <p>Podemos llamar la etiqueta mediante un ID que pondremos en cada una de ellas</p>
+            <xmp style="border: 1px solid black;">
+                <p id="parrafo">hola</p>
+            </xmp>
+            <xmp style="border: 1px solid black;">#parrafo{color:red;}</xmp>
+        </div>
+        <div>
+            <h2>Selector Universal</h2>
+            <p>Podemos asignar a todos los elementos un valor default mediante un selector universal</p>
+            <xmp style="border: 1px solid black;">*{font-size:40px}</xmp>
+            <p>Se le asignara un font-size de 40px a todos los textos</p>
+        </div>
+        <div>
+            <h2>Selectores Descendientes</h2>
+            <p>Podemos seleccionar una etiqueta que esta dentro de otra llamando solo al principal</p>
+            <xmp style="border:1px solid black;">
+            <section>
+                <p>Hola</p>
+            </section>
+            </xmp>
+            <xmp style="border: 1px solid black;">section p{color: red}</xmp>
+        </div>
+        <div>
+            <h2>Selector hijo directo</h2>
+            <p>Podemos llamar a los hijos directos de la etiqueta principal</p>
+            <xmp style="border: 1px solid black;">
+            <section>
+                <h1>Hola</h1>
+            </section>
+            </xmp>
+            <xmp style="border: 1px solid black;">section>h1{color:red;}</xmp>
+        </div>
+        <div>
+            <h2>Selector hermano siguiente o adyacene</h2>
+            <p style="color:red">Parrafo 1</p>
+            <p>Parrafo 2</p>
+            <p>Parrafo 3</p>
+            <xmp style="border: 1px solid black">div + p{color:red;}</xmp>
+            <p>Esto llamaria directamente al 1er parrafo </p>
+        </div>
+        <div>
+            <h2>Selector hermanos siguientes o adyacentes</h2>
+            <p>Selecciona a todos los elemntos que siguen de un elemento seleccionado</p>
+            <xmp style="border: 1px solid black">
+            <div>
+                <p>
+                    Hola
+                </p>
+            </div>
+            <p>
+                  hola1
+            </p>
+            <p>
+                 Hola2
+            </p>
+            </xmp>
+            <xmp style="border:1px solid black"> div ~ p{color: red;}</xmp>
+        </div>
+        <div>
+            <h2>Anidar selectores</h2>
+            <p>Podras llamar selectores de etiquetas dentro de otras etiquetas</p>
+            <xmp style="border:1px solid black"><div><p>Hola</p></div></xmp>
+            <xmp style="border:1px solid black">div p{color:red;}</xmp>
+        </div>
+    </section>
+</body>
+
+</html>
