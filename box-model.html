@@ -38,21 +38,69 @@
         <article style="border-top: 2px solid black;">
             <h1 style="text-decoration: underline;">Que es margin?</h1>
             <p>Margin es el espacio que separa un elemento de otro</p>
-            <div style="width: 200px; height: 200px; background-color: rgb(0, 255, 179); color: rgb(4, 63, 4);">box 1</div>
+            <div style="width: 200px; height: 200px; background-color: rgb(0, 255, 179); color: rgb(4, 63, 4);">box 1
+            </div>
             <p style="border: 2px solid black; display: inline;">Este seria el margen de los elementos</p>
-            <div style="width: 200px; height: 200px; background-color: rgb(0, 255, 179); color: rgb(4, 63, 4);"> box 2</div>
+            <div style="width: 200px; height: 200px; background-color: rgb(0, 255, 179); color: rgb(4, 63, 4);"> box 2
+            </div>
             <br>
         </article>
         <article style="border-top: 2px solid black;">
-            <h1>Que es un border?</h1>
-            <p>Border es un elemento que se utuliza para crear una linea alrededor de un elemento, tambien se diria que es el limite de cada elemento</p>
+            <h1 style="text-decoration: underline;">Que es un border?</h1>
+            <p>Border es un elemento que se utuliza para crear una linea alrededor de un elemento, tambien se diria que
+                es el limite de cada elemento</p>
             <div style="width: 200px; height: 200px; border: 5px solid black;"></div> <br>
         </article>
-        <article style="border-top: 2px solid black;">
+        <article style="border-top: 2px solid black; border-bottom: 2px solid black;">
             <h1 style="text-decoration: underline;">Para que sirve el uso del selector universal en el box model?</h1>
             <p>Para definir en todo el proyectos los elementos que queremos implentar a todos los selectores</p>
             <p>*{box-sizing: border-box;}</p>
             <p>se utiliza para ajustar el modelo de caja de un elemento HTML. de manera predeterminada. </p>
+        </article>
+    </section>
+    <br>
+    <section style="border-top: 2px solid black;">
+        <article>
+            <h1 style="text-decoration: underline;">Que es un elemento posicionado</h1>
+            <p>Es un elemento que se ha movido de su posicion normal en la pagina y se ha colocado en una posicion
+                diferente en relacion con su contenedor</p>
+            <p>-Posicionamiento estatico (por defecto)</p>
+            <p>-relative</p>
+            <p>-absolute</p>
+            <p>-fixed</p>
+            <p>-z-index</p>
+        </article>
+        <article style="border-top: 2px solid black;">
+            <h1 style="text-decoration: underline;">Que son los tipos de posicionamiento relativo, absoluto, fixed</h1>
+            <p style="display: inline;">El posicionamiento <p style="color:red; display: inline; font-weight: bold;" >relativo</p> permite marcar un margen de movimiento de un posicionamiento <p style="color:blue;font-weight: bold; display: inline;">absoluto</p>, tambien podemos adquiere valores adicionales</p>
+            <div style="width: 200px; height: 200px; background-color: red; position: relative;">
+                <p style="width: 50px; height: 50px; background-color: blue; position: absolute; left: 20px;"></p>
+            </div>
+            <br>
+            <p style="display: inline;">El posicionamiento <p style="color: rgb(0, 217, 255); font-weight: bold; display: inline;">fixed</p> es una propiedad de posicionamiento que se utiliza para fijar un elemento a una posicion especifica en el navegador</p>
+            <div style="width: 200px; height: 200px; background-color: rgb(0, 0, 0); ">
+                <p style="width: 60px; height: 60px; background-color: rgb(255, 255, 255);">fixed</p>
+              </div>
+              <p>Asi bajemos o subamos la pagina web, el posicionamiento del box fixed no se movera y seguira fijado a la posicion que le asignamos</p>  
+        </article>
+        <article style="border-top: 2px solid black;">
+            <h1 style="text-decoration: underline;">Que propiedad adquiere un elemento posicionado?</h1>
+            <p>Un elemento al posicionarlas gana las propiedades </p>
+            <p style="color: red; display: inline;">top, right, bottom, left y z-index</p>
+            <div style="width: 200px; height: 200px; background-color: rgb(17, 0, 255); color: rgb(255, 0, 0);">
+                <p style="text-align: center;">top</p>
+                <p style="text-align: left;">left</p>
+                <p style="text-align:right">right</p>
+                <p style="text-align: center;">bottom</p>
+            </div>
+        </article> <br>
+        <article style="border-top: 2px solid black;">
+            <h1 style="text-decoration: underline;">Ejemplos de position:fixed</h1>
+            <p>pagina web</p>
+            <div style="width: 200px; height: 400px; background-color: rgb(255, 0, 0); color: rgb(255, 0, 0); position: relative;">
+                <p style="width: 70px; height: 70px; background-color: blue; position: absolute; left: 50px; top: 90px; font-size: 20px; color: white;">No me muevo</p>
+            </div>
+            <p>Asi movamos la pagina de cualquier forma el posicionamiento fixed no se vera afectado</p>
         </article>
     </section>
 
