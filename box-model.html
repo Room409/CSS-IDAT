@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./box-model.css">
+</head>
+
+<body>
+    <section>
+        <article>
+            <h1 style="text-decoration: underline;">Que es Box model?</h1>
+            <p>
+                Es una estructura visual rectangular utilizada en diseños web, que inclute contenido, relleno, borde y
+                margen para cada elemento HTML.
+            </p>
+            <div style="width: 200px; height: 200px; background-color: aqua; color: rgb(19, 126, 19);">padding que va a
+                representar todo lo que va dentro del box</div>
+            <p style="color:rgb(196, 144, 77)">Y margin que se utiliza para establecer un margen alrededor de un
+                elemento</p>
+        </article>
+        <article style="border-top: 2px solid black;">
+            <h1 style="text-decoration: underline;">Que es padding?</h1>
+            <p>Padding es una propiedad CSS para utulizar en HTML para agregar espacios en blanco o transparaente
+                alrededor del contenido de un elemento </p>
+            <div style="width: 200px; height: 200px; background-color: rgb(0, 255, 179); color: rgb(4, 63, 4);">
+                <p style="text-align: center;">top</p>
+                <p style="text-align: left;">left</p>
+                <p style="text-align:right">right</p>
+                <p style="text-align: center;">bottom</p>
+            </div>
+            <p>tambien se podria representar con padding:10 10 10 10; que significaria arriba, derecha, abajo e
+                izquierda</p>
+        </article>
+        <article style="border-top: 2px solid black;">
+            <h1 style="text-decoration: underline;">Que es margin?</h1>
+            <p>Margin es el espacio que separa un elemento de otro</p>
+            <div style="width: 200px; height: 200px; background-color: rgb(0, 255, 179); color: rgb(4, 63, 4);">box 1</div>
+            <p style="border: 2px solid black; display: inline;">Este seria el margen de los elementos</p>
+            <div style="width: 200px; height: 200px; background-color: rgb(0, 255, 179); color: rgb(4, 63, 4);"> box 2</div>
+            <br>
+        </article>
+        <article style="border-top: 2px solid black;">
+            <h1>Que es un border?</h1>
+            <p>Border es un elemento que se utuliza para crear una linea alrededor de un elemento, tambien se diria que es el limite de cada elemento</p>
+            <div style="width: 200px; height: 200px; border: 5px solid black;"></div> <br>
+        </article>
+        <article style="border-top: 2px solid black;">
+            <h1 style="text-decoration: underline;">Para que sirve el uso del selector universal en el box model?</h1>
+            <p>Para definir en todo el proyectos los elementos que queremos implentar a todos los selectores</p>
+            <p>*{box-sizing: border-box;}</p>
+            <p>se utiliza para ajustar el model ed caja de un elemento HTML. de manera predeterminada. </p>
+        </article>
+    </section>
+
+</body>
+
+</html>
